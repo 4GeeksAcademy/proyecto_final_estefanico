@@ -3,26 +3,26 @@ import streamlit as st
 
 model = load(open("/workspaces/proyecto_final_estefanico/data/processed/df_clean.sav", "rb"))
 
-st.title('Calculo de ingreso')
+st.title('Cálculo de ingreso')
 
 region =  st.radio(
     "Región a la que pertenece", 
     ['Región de ñuble',
- 'Region del biobio',
- 'Region metropolitana',
- 'Region de tarapaca',
- 'Region de los rios',
- 'Region del libertador gral bernardo ohiggins',
- 'Region de la araucania',
- 'Region de valparaiso',
- 'Region de los lagos'
- 'Region de coquimbo',
- 'Region del maule',
- 'Region de arica y parinacota',
- 'Region de antofagasta',
- 'Region de atacama',
- 'Region de magallanes y de la antartica chilena',
- 'Region de aysen del gral carlos ibañez del campo'],
+ 'Región del biobio',
+ 'Región metropolitana',
+ 'Región de tarapaca',
+ 'Región de los rios',
+ 'Región del libertador gral bernardo ohiggins',
+ 'Región de la araucania',
+ 'Región de valparaiso',
+ 'Región de los lagos'
+ 'Región de coquimbo',
+ 'Región del maule',
+ 'Región de arica y parinacota',
+ 'Región de antofagasta',
+ 'Región de atacama',
+ 'Región de magallanes y de la antartica chilena',
+ 'Región de aysen del gral carlos ibañez del campo'],
     index=None)
 
 area = st.radio(
@@ -41,7 +41,7 @@ afiliacion= st.radio(
  index= None)
 
 prevision =  st.radio(
-    "Prevision",
+    "Previsión",
     ['FONASA','Isapre','FF.AA. y del Orden','Ninguno (particular)','Otro sistema'],
     index = None
 )
@@ -90,21 +90,21 @@ vivienda = st.radio(
 )
 
 region_dic = {'Región de ñuble': 0,
- 'Region del biobio' : 1,
- 'Region metropolitana' : 2,
- 'Region de tarapaca' : 3,
- 'Region de los rios': 4,
- 'Region del libertador gral bernardo ohiggins': 5,
- 'Region de la araucania': 6,
- 'Region de valparaiso': 7,
- 'Region de los lagos': 8,
- 'Region de coquimbo':9,
- 'Region del maule':10,
- 'Region de arica y parinacota': 11,
- 'Region de antofagasta': 12,
- 'Region de atacama':13,
- 'Region de magallanes y de la antartica chilena': 14,
- 'Region de aysen del gral carlos ibañez del campo': 15}
+ 'Región del biobio' : 1,
+ 'Región metropolitana' : 2,
+ 'Región de tarapaca' : 3,
+ 'Región de los rios': 4,
+ 'Región del libertador gral bernardo ohiggins': 5,
+ 'Región de la araucania': 6,
+ 'Región de valparaiso': 7,
+ 'Región de los lagos': 8,
+ 'Región de coquimbo':9,
+ 'Región del maule':10,
+ 'Región de arica y parinacota': 11,
+ 'Región de antofagasta': 12,
+ 'Región de atacama':13,
+ 'Región de magallanes y de la antartica chilena': 14,
+ 'Región de aysen del gral carlos ibañez del campo': 15}
 
 area_dic = {
     'Rural':0,
