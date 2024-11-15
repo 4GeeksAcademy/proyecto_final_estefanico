@@ -2,6 +2,7 @@ from pickle import load
 import streamlit as st
 
 model = load(open("/workspaces/proyecto_final_estefanico/data/processed/df_clean.sav", "rb"))
+/workspaces/proyecto_final_estefanico/data/processed/df_clean.csv
 
 st.title('Cálculo de ingreso')
 
